@@ -16,7 +16,7 @@
 
     2. Sử dụng khóa phiên đã giải mã để giải mã email đã nhận.
 
-- [Lý thuyết PGP protocol]()
+- [Lý thuyết PGP protocol](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/PGP_Protocol.md)
 
-- [Hướng dẫn cấu hình và demo]()
+- [Hướng dẫn cấu hình và demo](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/Config_guide_and_demo.md)
 

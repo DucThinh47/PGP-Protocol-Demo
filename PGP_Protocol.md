@@ -2,15 +2,17 @@
 
 ## Content
 
-- [Giới thiệu PGP]()
+- [Giới thiệu PGP](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/PGP_Protocol.md#gi%E1%BB%9Bi-thi%E1%BB%87u-giao-th%E1%BB%A9c-pgp-pretty-good-privacy)
 
-- [Kiến trúc của PGP]()
+- [Kiến trúc của PGP](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/PGP_Protocol.md#i-ki%E1%BA%BFn-tr%C3%BAc-c%E1%BB%A7a-pgp)
 
-- [Hoạt động của PGP]()
+- [Hoạt động của PGP](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/PGP_Protocol.md#ii-ho%E1%BA%A1t-%C4%91%E1%BB%99ng-c%E1%BB%A7a-pgp)
 
-- [Quy trình thực tế của PGP trong việc đảm bảo tính bí mật]()
+- [Ứng dụng của PGP](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/PGP_Protocol.md#iii-%E1%BB%A9ng-d%E1%BB%A5ng-c%E1%BB%A7a-pgp)
 
-- [Quy trình xác thực người gửi qua PGP]()
+- [Quy trình thực tế của PGP trong việc đảm bảo tính bí mật](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/PGP_Protocol.md#iv-quy-tr%C3%ACnh-th%E1%BB%B1c-t%E1%BA%BF-c%E1%BB%A7a-pgp-trong-vi%E1%BB%87c-%C4%91%E1%BA%A3m-b%E1%BA%A3o-t%C3%ADnh-b%C3%AD-m%E1%BA%ADt)
+
+- [Quy trình xác thực người gửi qua PGP](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/PGP_Protocol.md#v-quy-tr%C3%ACnh-x%C3%A1c-th%E1%BB%B1c-ng%C6%B0%E1%BB%9Di-g%E1%BB%ADi-qua-pgp)
 
 ### Giới thiệu giao thức PGP (Pretty Good Privacy)
 

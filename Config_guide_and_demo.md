@@ -20,19 +20,19 @@ Mỗi máy sẽ có một cặp khóa riêng (khóa công khai và khóa riêng 
 - ***Tên và email***: Nhập thông tin.
 - ***Mật khẩu bảo vệ khóa***: Nhập mật khẩu an toàn.
 
-![img](0)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image.png?raw=true)
 
 3. Kiểm tra danh sách khóa đã tạo:
 
         gpg --list-keys
 
-![img](1)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image1.png?raw=true)
 
 4. Xuất khóa công khai để gửi cho máy Ubuntu:
 
         gpg --export -a "tên hoặc email" > public_key_kali.asc
 
-![img](2)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image2.png?raw=true)
 
 5. Xuất khóa riêng tư (dùng để tạo chữ ký điện tử):
 
@@ -40,23 +40,23 @@ Mỗi máy sẽ có một cặp khóa riêng (khóa công khai và khóa riêng 
 
     *Lưu ý, cần nhập mật khẩu đã tạo khi xuất khóa riêng tư.*
 
-![img](3)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image3.png?raw=true)
 
 ***Trên Ubuntu***
 
 - Thực hiện tương tự các bước trên để tạo cặp khóa cho Ubuntu.
 
-![img](4)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image4.png?raw=true)
 
 - Sau đó, xuất khóa công khai của Ubuntu:
 
         gpg --export -a "tên hoặc email của bạn" > public_key_ubuntu.asc
 
-![img](5)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image5.png?raw=true)
 
 - Xuất khóa riêng tư của Ubuntu: 
 
-![img](25)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image25.png?raw=true)
 
 ***3. Trao đổi khóa công khai giữa hai máy***
 
@@ -66,39 +66,39 @@ Trên Kali, copy khóa công khai qua Ubuntu bằng ***SCP*** (nếu cả hai m�
 
 Địa chỉ IP của máy Ubuntu: 
 
-![img](6)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image6.png?raw=true)
 
 Sử dụng lệnh ***scp*** trên máy Kali: 
 
     scp public_key_kali.asc thinh181@192.168.152.163:~
 
-![img](8)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image8.png?raw=true)
 
 ***Lưu ý***, cần cài đặt ssh trên máy Ubuntu và khởi động ssh. 
 
-![img](7)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image7.png?raw=true)
 
 Trên Ubuntu, nhập khóa công khai của máy Kali:
 
-![img](9)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image9.png?raw=true)
 
 ***Chuyển khóa từ Ubuntu sang Kali***
 
 Đảm bảo ssh server bên Kali đang hoạt động: 
 
-![img](10)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image10.png?raw=true)
 
 Địa chỉ IP của máy Kali: 
 
-![img](11)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image11.png?raw=true)
 
 Sử dụng lệnh ***scp*** trên máy Ubuntu: 
 
-![img](12)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image12.png?raw=true)
 
 Trên máy Kali, import khóa công khai của máy Ubuntu: 
 
-![img](13)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image13.png?raw=true)
 
 ***4. Cấu hình Thunderbird để sử dụng PGP***
 
@@ -112,19 +112,19 @@ Trên máy Kali, import khóa công khai của máy Ubuntu:
 
 ***Máy Kali***: 
 
-![img](14)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image14.png?raw=true)
 
-![img](15)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image15.png?raw=true)
 
-![img](16)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image16.png?raw=true)
 
 ***Máy Ubuntu***
 
-![img](17)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image17.png?raw=true)
 
-![img](18)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image18.png?raw=true)
 
-![img](19)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image19.png?raw=true)
 
 ***Bước 2: Cấu hình OpenPGP***
 
@@ -142,26 +142,25 @@ Trên máy Kali, import khóa công khai của máy Ubuntu:
 
 ***Máy Kali***
 
-![img](20)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image20.png?raw=true)
 
-![img](21)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image21.png?raw=true)
 
-![img](22)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image22.png?raw=true)
 
-![img](23)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image23.png?raw=true)
 
 *Lưu ý, cần nhập mật khẩu đã tạo khi sinh khóa riêng tư nếu muốn import key.*
 
-![img](24)
-
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image24.png?raw=true)
 
 ***Máy Ubuntu***
 
-![img](26)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image26.png?raw=true)
 
-![img](27)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image27.png?raw=true)
 
-![img](28)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image28.png?raw=true)
 
 ***5. Gửi email mã hóa từ Kali sang Ubuntu***
 
@@ -177,51 +176,51 @@ Trên máy Kali, import khóa công khai của máy Ubuntu:
 
 Chọn private_key_kali làm khóa mặc định: 
 
-![img](29)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image29.png?raw=true)
 
 Soạn mail và chọn encrypt: 
 
 *Khi được yêu cầu khóa công khai của bên nhận, click vào Resolve*. 
 
-![img](30)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image30.png?raw=true)
 
 Chọn Import Public Keys From File...
 
-![img](31)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image31.png?raw=true)
 
 Chọn public_key_ubuntu:
 
-![img](32)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image32.png?raw=true)
 
 Chọn Accept và Import: 
 
-![img](33)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image33.png?raw=true)
 
 Import thành công khóa công khai của máy Ubuntu: 
 
-![img](34)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image34.png?raw=true)
 
 Chọn Encrypt và Send Email:
 
-![img](35)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image35.png?raw=true)
 
 ***Máy Ubuntu***
 
 Trong trường hợp private_key_ubuntu chưa được import: 
 
-![img](36)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image36.png?raw=true)
 
 Không xem được email gửi từ bên Kali đã được mã hóa bằng public_key_ubuntu:
 
-![img](37)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image37.png?raw=true)
 
 Trong trường hợp đã import private_key_ubuntu: 
 
-![img](38)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image38.png?raw=true)
 
 Xem được email: 
 
-![img](39)
+![img](https://github.com/DucThinh47/PGP-Protocol-Demo/blob/main/images/image39.png?raw=true)
 
 
 
